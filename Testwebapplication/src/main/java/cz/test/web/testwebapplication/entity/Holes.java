@@ -5,7 +5,10 @@
 package cz.test.web.testwebapplication.entity;
 
 import java.io.Serializable;
+import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 import javax.persistence.Table;
 
 /**
@@ -16,15 +19,33 @@ import javax.persistence.Table;
 @Table(name = "HOLES")
 public class Holes implements Serializable {
 
+    @GeneratedValue
+    @Id
     private int id;
+    @Column(name="HOLE1")
     private int one;
+    
+    @Column(name="HOLE2")
     private int two;
+    @Column(name="HOLE3")
     private int three;
+    
+    @Column(name="HOLE4")
     private int four;
+    
+    @Column(name="HOLE5")
     private int five;
+    
+    @Column(name="HOLE6")
     private int six;
+    
+    @Column(name="HOLE7")
     private int seven;
+    
+    @Column(name="HOLE8")
     private int eight;
+    
+    @Column(name="HOLE9")
     private int nine;
 
     public int getId() {
