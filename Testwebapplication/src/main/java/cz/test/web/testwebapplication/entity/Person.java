@@ -2,7 +2,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package cz.test.web.testwebapplication.person;
+package cz.test.web.testwebapplication.entity;
 
 
 import java.io.Serializable;
@@ -56,8 +56,15 @@ public class Person implements Serializable {
     }
     
     
+    public String toString(){
+        return "Person [id="+id+", fistname="+firstname+",lastanem="+ lastname+"]";
+    }
     
     
+//        public String toString(){
+//         return "Employee [id=" + id + ", name=" + name + ", department="
+//                + "]";
+//    }
     
     
 }
