@@ -32,7 +32,7 @@
      <!--set config db -->
     <bean id="propertyConfigurer"
         class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer"
-        p:location="/WEB-INF/jdbc.properties" />
+        p:location="/WEB-INF/database.properties" />
  
   <!--settting parameters db-->
     <bean id="dataSource"
