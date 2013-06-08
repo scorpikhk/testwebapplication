@@ -16,17 +16,17 @@
         http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd
         http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
  
-    <context:annotation-config />
-    <context:component-scan base-package="cz.test.webapplication.controller" />
+    <!--<context:annotation-config />
+    <context:component-scan base-package="cz.test.webapplication.controller" /> -->
 
- <!--config path to jsp view -->
+ <!--config path to jsp view--> 
     <bean id="jspViewResolver"
         class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="viewClass"
             value="org.springframework.web.servlet.view.JstlView" />
         <property name="prefix" value="/WEB-INF/views/" />
         <property name="suffix" value=".jsp" />
-    </bean>
+    </bean> 
  
 
      <!--set config db -->
@@ -41,7 +41,7 @@
         p:url="${jdbc.databaseurl}" p:username="${jdbc.username}"
         p:password="${jdbc.password}" />
  
-  <!--config  db+mapping hibernate -->
+  <!--config  db+mapping hibernate 
     <bean id="sessionFactory"
         class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
         <property name="dataSource" ref="dataSource" />
@@ -57,13 +57,13 @@
                 <prop key="hibernate.show_sql">true</prop>
             </props>
         </property>
-    </bean>
+    </bean> -->
     
-  <!--setting hibernate -->
+  <!--setting hibernate
     <tx:annotation-driven />
     <bean id="transactionManager"
         class="org.springframework.orm.hibernate3.HibernateTransactionManager">
         <property name="sessionFactory" ref="sessionFactory" />
-    </bean>
+    </bean> -->
     
 </beans>
