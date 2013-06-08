@@ -120,16 +120,8 @@
             <version>${org.springframework.version}</version>
         </dependency>
 	 
-	<!--
-	    Object-to-XML Mapping (OXM) abstraction and integration with JAXB, JiBX, Castor, XStream, and XML Beans.
-	    (depends on spring-core, spring-beans, spring-context)
-	    Define this if you need OXM (org.springframework.oxm.*)
-	-->
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-oxm</artifactId>
-            <version>${org.springframework.version}</version>
-        </dependency>
+
+      
 	 
 	<!--
 	    Web application development utilities applicable to both Servlet and Portlet Environments
@@ -204,11 +196,7 @@
             <version>3.6.3.Final</version>
         </dependency>
 
-        <dependency>
-            <groupId>javassist</groupId>
-            <artifactId>javassist</artifactId>
-            <version>3.12.1.GA</version>
-        </dependency>
+      
  
         <dependency>
             <groupId>javax.servlet</groupId>
