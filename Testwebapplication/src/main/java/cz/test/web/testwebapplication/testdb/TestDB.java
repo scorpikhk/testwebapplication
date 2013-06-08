@@ -9,5 +9,11 @@ package cz.test.web.testwebapplication.testdb;
  * @author Scorpion
  */
 public class TestDB {
-    
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+    }
 }
