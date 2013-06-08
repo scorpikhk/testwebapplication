@@ -3,5 +3,6 @@
 <hibernate-configuration>
   <session-factory>
         <mapping class="cz.test.webtestapplication.entity.Person" />
+        <mapping class="cz.test.webtestapplication.entity.Holes"/>
   </session-factory>
 </hibernate-configuration>
