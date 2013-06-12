@@ -19,7 +19,7 @@
     <context:annotation-config />
     <context:component-scan base-package="cz.test.webapplication.controller" /> 
 
- <!--config path to jsp view--> 
+ <!--config path to jsp files--> 
     <bean id="jspViewResolver"
         class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="viewClass"
@@ -34,12 +34,14 @@
         class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer"
         p:location="/WEB-INF/database.properties" />
  
+ 
   <!--settting parameters db-->
     <bean id="dataSource"
         class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close"
         p:driverClassName="${jdbc.driverClassName}"
         p:url="${jdbc.databaseurl}" p:username="${jdbc.username}"
         p:password="${jdbc.password}" />
+ 
  
   <!--config  db+mapping hibernate -->
     <bean id="sessionFactory"
@@ -59,11 +61,11 @@
         </property>
     </bean> 
     
-  <!--setting hibernate
+  <!--setting hibernate-->
     <tx:annotation-driven />
     <bean id="transactionManager"
         class="org.springframework.orm.hibernate3.HibernateTransactionManager">
         <property name="sessionFactory" ref="sessionFactory" />
-    </bean> -->
+    </bean> 
     
 </beans>
