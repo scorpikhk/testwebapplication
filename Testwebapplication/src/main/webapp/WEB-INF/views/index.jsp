@@ -15,9 +15,9 @@
                 <div class="span8">  
                     <ul class="nav nav-pills">  
                         <li class="active"><a href="#">Home</a></li>     
-                        <li><a href="#">Test1</a></li>  
-                        <li><a href="#">Test 2 </a></li>   
-                        <li><a href="#">Test 3 </a></li>      
+                        <li><a href="#">Login</a></li>  
+                        <li><a  href="#">My scores </a></li>   
+                        <li><a  href="#">Test 3 </a></li>      
                     </ul>  
                 </div>  
             </div>  
@@ -27,5 +27,18 @@
         
         
         <h3>Test application with boostrap</h3>
+        
+           
+            
+                
+                <button type="submit" class="btn btn-primary" >Test button</button>
+                 <button type="submit" class="btn btn-success" >Test button</button>
+                 <button type="submit" class="btn btn-danger" >Test button</button>
+                  <button type="submit" class="btn btn-info" >Test button</button>
+                   <button type="submit" class="btn btn-inverse" >Test button</button>
+               
+              
+           
+       
     </body>
 </html>

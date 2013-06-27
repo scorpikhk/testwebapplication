@@ -13,11 +13,11 @@ import cz.test.web.testwebapplication.entity.Person;
 public interface PersonDAO {
     
     
-    public void addPerson  (Person person);
+    public void addPerson  (Person person); //object class Person
     
     public void editPerson(Person person);
     
-    public void deletePerson(String id);
+    public void deletePerson(Integer id);
     
         
     
