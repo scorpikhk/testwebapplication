@@ -17,8 +17,11 @@
         http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
  
     <context:annotation-config />
-    <context:component-scan base-package="cz.test.webapplication.controller" /> 
+    <context:component-scan base-package="cz.test.web.testwebapplication.controller" /> 
 
+ <!-- Enables the Spring MVC @Controller programming model -->
+    
+    
  <!--config path to jsp files--> 
     <bean id="jspViewResolver"
         class="org.springframework.web.servlet.view.InternalResourceViewResolver">
@@ -60,6 +63,9 @@
             </props>
         </property>
     </bean> 
+    
+<bean id="PersonDAO" class="cz.test.web.testwebapplication.dao.PersonDAOImpl"></bean>
+ <bean id="PersonManager" class="cz.test.web.testwebapplication.service.PersonManagerImpl"></bean>  
     
   <!--setting hibernate-->
     <tx:annotation-driven />

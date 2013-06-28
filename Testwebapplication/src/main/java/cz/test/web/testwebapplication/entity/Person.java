@@ -58,13 +58,5 @@ public class Person implements Serializable {
     
     public String toString(){
         return "Person [id="+id+", fistname="+firstname+",lastanem="+ lastname+"]";
-    }
-    
-    
-//        public String toString(){
-//         return "Employee [id=" + id + ", name=" + name + ", department="
-//                + "]";
-//    }
-    
-    
+    }    
 }

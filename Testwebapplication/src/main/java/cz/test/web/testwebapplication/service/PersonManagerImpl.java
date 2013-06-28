@@ -8,12 +8,14 @@ import cz.test.web.testwebapplication.dao.PersonDAO;
 import cz.test.web.testwebapplication.entity.Person;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 /**
  *
  * @author Scorpion
  */
+@Service
 public class PersonManagerImpl implements PersonManager{
 
     

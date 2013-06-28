@@ -6,9 +6,7 @@
             30
         </session-timeout>
     </session-config>
-    <welcome-file-list>
-        <welcome-file>/WEB-INF/views/index.jsp</welcome-file>
-        </welcome-file-list>
+   
     <servlet >
     <servlet-name>person</servlet-name>    
     <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
@@ -24,5 +22,9 @@
 	    <param-name>contextConfigLocation</param-name>
 	    <param-value>/WEB-INF/person-servlet.xml</param-value>
 	</context-param>
+<!--        
+     <listener>
+	    <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener>-->
     
     </web-app>

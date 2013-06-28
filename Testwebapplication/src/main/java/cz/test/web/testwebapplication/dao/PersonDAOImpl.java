@@ -30,8 +30,17 @@ public class PersonDAOImpl implements PersonDAO{
 
     
     public void deletePerson(Integer id) {
-        sessionFactory.getCurrentSession().delete(id);
+       Person person =getPerson(id);
+       if(person==null){
+        sessionFactory.getCurrentSession().delete(id);   
+       }
         
+        
+    }
+
+    public Person getPerson(int id) {
+       Person person =(Person) sessionFactory.getCurrentSession().get(Person.class, id);
+       return person;
     }
     
 }
