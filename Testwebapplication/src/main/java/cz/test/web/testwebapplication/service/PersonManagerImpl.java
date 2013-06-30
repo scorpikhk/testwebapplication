@@ -29,7 +29,7 @@ public class PersonManagerImpl implements PersonManager{
 
     @Transactional
     public List<Person> getAllPerson() {
-        throw new UnsupportedOperationException("Not supported yet.");
+       return personDAO.getAllPerson();
     }
 
     @Transactional

@@ -5,6 +5,7 @@
 package cz.test.web.testwebapplication.dao;
 
 import cz.test.web.testwebapplication.entity.Person;
+import java.util.List;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -41,6 +42,10 @@ public class PersonDAOImpl implements PersonDAO{
     public Person getPerson(int id) {
        Person person =(Person) sessionFactory.getCurrentSession().get(Person.class, id);
        return person;
+    }
+
+    public List<Person> getAllPerson() {
+        return this.sessionFactory.getCurrentSession().createQuery("from Person").list();
     }
     
 }

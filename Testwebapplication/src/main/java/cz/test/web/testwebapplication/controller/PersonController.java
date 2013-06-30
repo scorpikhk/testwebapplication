@@ -29,19 +29,19 @@ public class PersonController {
     public String listPerson(ModelMap map ){
         
         map.addAttribute("person", new Person());
-       // map.addAttribute("personlist", personManager.getAllPerson());
+        map.addAttribute("personlist", personManager.getAllPerson());
 	
-      return "person";
+      return "addperson";
         
    }
    
-//    @RequestMapping(value="/addPerson", method = RequestMethod.POST)
-//    
-//   public String AddPerson(@ModelAttribute (value = "person") Person person,ModelMap model){
-//        personManager.addPerson(person);
-//        
-//        return "person";
-//}
+    @RequestMapping(value="/addPerson", method = RequestMethod.POST)
+    
+   public String AddPerson(@ModelAttribute (value = "person") Person person,ModelMap model){
+        personManager.addPerson(person);
+        
+        return "persons";
+}
    
     
  

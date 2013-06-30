@@ -45,7 +45,7 @@
             <h4>Test form</h4>
             </div> 
         
-        <form:form action="add" commandName="person">
+        <form:form action="addPerson" commandName="person">
             
            <table>
     <tr>
@@ -59,7 +59,7 @@
   
     <tr>
         <td colspan="2">
-            <input class="btn btn-primary" type="submit" value="Add Employee"/>
+            <input class="btn btn-primary" type="submit" value="Add persons"/>
         </td>
     </tr>
 </table>   
@@ -68,9 +68,6 @@
         </form:form>
         
      
-                       
-                       
-                       
                        
    
     
